@@ -20,19 +20,24 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 
 Users should be able to:
 
-- See hover states for interactive elements.
-- Implement a responsive design for desktop and mobile.
+- View the optimal layout depending on their device's screen size.
 
 ### Screenshot
 
 - Desktop
 
+![Desktop Stats Preview Card Component](https://user-images.githubusercontent.com/61619208/141074000-4b554fa7-52d3-4f4d-b27f-149cd6d5a13b.png)
+
+
 - Mobile
+
+![Mobile Stats Preview Card Component](https://user-images.githubusercontent.com/61619208/141074018-0e38b227-481c-4938-886b-d808fb83ccdf.png)
+
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62/hub/stats-preview-card-using-html-sass-bootstrap-5-and-webpack-5-HdK-OF0fy
+- Live Site URL: https://front-statspreviewcardcomponent.netlify.app/
 
 ## My process
 
