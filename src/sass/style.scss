@@ -1,0 +1,131 @@
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Lexend Deca";
+    src: url("../fonts/LexendDeca-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+// Apply rounded corners in desktop and mobile
+$borderR : 10px;
+
+@media (min-width: 0px) and (max-width: 991px) {
+    .card-component {
+        border-bottom-left-radius: $borderR;
+        border-bottom-right-radius: $borderR;
+    }
+
+    .card-image,
+    .overlay,
+    .card-component,
+    .img-fram img {
+        border-top-left-radius: $borderR;
+        border-top-right-radius: $borderR;
+    }
+}
+
+@media (min-width: 992px) {
+    .card-component {
+        border-top-left-radius: $borderR;
+        border-bottom-left-radius: $borderR;
+    }
+
+    .card-image,
+    .overlay,
+    .card-component,
+    .img-fram img {
+        border-top-right-radius: $borderR;
+        border-bottom-right-radius: $borderR;
+    }
+}
+
+$mainBackground : hsl(233, 47%, 7%);
+$cardBackground : hsl(244, 38%, 16%);
+$accent : hsl(277, 64%, 61%);
+$mainHeading : hsl(0, 0%, 100%);
+$mainParagraph: hsla(0, 0%, 100%, 0.75);
+$statHeading : hsla(0, 0%, 100%, 0.6);
+
+$desktopScreen : 991px;
+
+// html,
+// body {
+//     height: 100%;
+// }
+
+body {
+    background-color: $mainBackground;
+    padding: 50px;
+
+    .card-component {
+        background-color: $cardBackground;
+
+        .card-info {
+
+            .sub-container {
+                padding: 40px;
+                margin: auto;
+
+                .accent {
+                    color: $accent;
+                }
+
+                h1 {
+                    color: $mainHeading;
+                    font-family: "Inter", sans-serif;
+                    font-weight: 700;
+                }
+
+                p {
+                    color: $mainParagraph;
+                    font-family: "Inter", sans-serif;
+                    font-weight: 400;
+                }
+
+                .info-small-heading {
+                    color: $mainHeading;
+                    font-family: "Inter", sans-serif;
+                    font-weight: 700;
+                }
+
+                .info-desc {
+                    color: $mainParagraph;
+                    font-family: "Lexend Deca", sans-serif;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .card-image {
+            padding: 0px;
+
+            .img-fram {
+                position: relative;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+                .overlay {
+                    background-color: $accent;
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0.6;
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                }
+            }
+        }
+    }
+}
